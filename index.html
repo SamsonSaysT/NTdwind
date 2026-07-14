@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffd500">
+  <meta name="description" content="NotDwindling.com — still here.">
+  <title>NotDwindling.com</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="utility-line" aria-hidden="true">
+      <span>NOT DWINDLING</span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <h1>NotDwindling.com</h1>
+
+    <div class="masthead-foot">
+      <p>STILL NOT DWINDLING.</p>
+      <a href="#photos">ENTER ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="photos-section" id="photos" aria-labelledby="photos-heading">
+      <div class="section-index">
+        <span>01</span>
+        <h2 id="photos-heading"> </h2>
+        <span>05 FRAMES</span>
+      </div>
+
+      <div class="carousel" data-carousel>
+        <div class="carousel-stage">
+          <div class="carousel-track">
+            <figure class="slide is-active">
+              <img src="assets/photo-1.webp" alt="Two friends shopping in a grocery store" draggable="false">
+              <figcaption>NOT DWINDLING / GROCERY AISLE</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/photo-2.jpg" alt="Two friends holding flowers in a grocery store" loading="lazy" draggable="false">
+              <figcaption>NOT DWINDLING / FLOWERS</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/photo-3.jpg" alt="Two friends posing at an airport" loading="lazy" draggable="false">
+              <figcaption>NOT DWINDLING / IN TRANSIT</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/photo-4.webp" alt="Two friends posing indoors" loading="lazy" draggable="false">
+              <figcaption>NOT DWINDLING / INSIDE</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/photo-5.jpg" alt="Two friends standing outdoors" loading="lazy" draggable="false">
+              <figcaption>NOT DWINDLING / OUTSIDE</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="carousel-console">
+          <button class="carousel-arrow previous" type="button" aria-label="Previous photo">← PREV</button>
+          <div class="carousel-readout" aria-live="polite">
+            <span id="carousel-current">01</span><span aria-hidden="true"> / </span><span>05</span>
+          </div>
+          <button class="carousel-arrow next" type="button" aria-label="Next photo">NEXT →</button>
+        </div>
+
+        <div class="carousel-dots" aria-label="Choose a photo"></div>
+      </div>
+    </section>
+
+    <section class="game-section" id="game" aria-labelledby="game-heading">
+      <div class="game-intro">
+        <p class="game-kicker">NOT DWINDLING</p>
+        <h2 id="game-heading">Okay Yeah.</h2>
+        <p class="game-deck">don't let it dwindle.</p>
+      </div>
+
+      <div class="game-console">
+        <div class="status-strip">
+          <span>LIVE BLOCK FEED</span>
+          <span class="status-score">SCORE <output id="score" aria-live="polite">0000</output></span>
+        </div>
+
+        <div class="board-frame">
+          <canvas id="game-board" width="320" height="512" aria-label="Falling block game board"></canvas>
+          <div class="game-banner" id="game-banner">
+            <strong id="game-message">READY?</strong>
+            <button id="new-game" type="button">START</button>
+          </div>
+        </div>
+
+        <div class="control-panel" aria-label="Game controls">
+          <button id="left" type="button" aria-label="Move left"><span>←</span><small>LEFT</small></button>
+          <button id="rotate" type="button" aria-label="Rotate"><span>↻</span><small>TURN</small></button>
+          <button id="right" type="button" aria-label="Move right"><span>→</span><small>RIGHT</small></button>
+          <button id="down" type="button" aria-label="Drop faster"><span>↓</span><small>DROP</small></button>
+        </div>
+
+        <p class="game-help"><kbd>←</kbd><kbd>→</kbd> MOVE <span>/</span> <kbd>↑</kbd> TURN <span>/</span> <kbd>↓</kbd> DROP <span>/</span> <kbd>N</kbd> RESET</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>NOT</span>
+    <span>DWINDLING.</span>
+    <small>END OF THE PAGE / NOT THE END OF US</small>
+  </footer>
+</body>
+</html>
